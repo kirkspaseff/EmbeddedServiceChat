@@ -8,16 +8,26 @@
 		outline: 1px solid #005290;
 	}
 </style>
+<style>
+	#mybutton {
+		cursor: pointer;
+		position: fixed;
+		bottom: -4px;
+		right: 15px;
+	}
+</style>
+<div id="mybutton">
+    <a onclick="bootstrapChat()"><img src="https://www.rocketlawyer.com/binaries/content/gallery/logos-responsive/US/sfdc/Chat%20widget%20animation%201.png"></a>
+</div> 
+
 
 <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
 <script type='text/javascript'>
 	var initESW = function(gslbBaseURL) {
-		embedded_svc.settings.displayHelpButton = true; //Or false
 		embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
 		embedded_svc.settings.avatarImgURL = 'https://www.rocketlawyer.com/binaries/content/gallery/logos-responsive/US/sfdc/Agent%20Avatar%20(Alex).png';
 		embedded_svc.settings.chatbotAvatarImgURL = 'https://www.rocketlawyer.com/binaries/content/gallery/logos-responsive/US/sfdc/Einstein%20Bots%20Avatar.png';
-		embedded_svc.settings.waitingStateBackgroundImgURL = 'https://cdn0.iconfinder.com/data/icons/essentials-line/100/Chat-512.png';
-		embedded_svc.settings.prechatBackgroundImgURL = 'https://cdn0.iconfinder.com/data/icons/essentials-line/100/Chat-512.png';
+		embedded_svc.settings.displayHelpButton = false;
 
 		//embedded_svc.settings.defaultMinimizedText = '...'; //(Defaults to Chat with an Expert)
 		//embedded_svc.settings.disabledMinimizedText = '...'; //(Defaults to Agent Offline)
@@ -64,6 +74,11 @@
 	} else {
 		initESW('https://service.force.com');
 	}
+</script>
+<script type='text/javascript'>
+	function bootstrapChat() {
+		embedded_svc.bootstrapEmbeddedService();
+	} 
 </script>
 
   
