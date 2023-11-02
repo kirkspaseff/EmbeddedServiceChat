@@ -21,7 +21,7 @@
     function bootstrapChat() {
         embedded_svc.bootstrapEmbeddedService();
         var button = document.getElementById('mybutton');
-        button.style.display = 'none';
+        button.style.visibility = 'hidden';
     } </script>
     
 <div id="mybutton">
@@ -39,6 +39,8 @@
         embedded_svc.settings.waitingStateBackgroundImgURL = 'https://www.rocketlawyer.com/binaries/content/gallery/logos-responsive/US/sfdc/Chat%20widget%20animation%202.png'
         embedded_svc.addEventHandler("afterDestroy", function(data) {
           console.log("afterDestroy	event was fired.");
+          var button = document.getElementById('mybutton');
+          button.style.visibility = 'visible';
         });
 
         //embedded_svc.settings.defaultMinimizedText = '...'; //(Defaults to Chat with an Expert)
