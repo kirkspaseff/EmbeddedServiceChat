@@ -6,7 +6,7 @@
 <body>
 	<h1>Testing chat</h1>
 <a id="liveagent_button_online_57332000000Cb3T" href="javascript://Chat" style="display: none;" onclick="liveagent.startChat('57332000000Cb3T')">Click Here</a>
-<div id="liveagent_button_offline_57332000000Cb3T" style="display: none;"><!-- Offline Chat Content --></div>
+<div id="liveagent_button_offline_57332000000Cb3T" style="display: none;">Here is some offline content</div>
 
 <script type="text/javascript">
 	if (!window._laq) { window._laq = []; }
