@@ -5,12 +5,14 @@
 </head>
 <body>
 	<h1>Testing chat</h1>
-  <img id="liveagent_button_online_57332000000Cb3T" style="display: none; border: 0px none; cursor: pointer" onclick="liveagent.startChat('57332000000Cb3T')" src="https://rlusstage--staging.sandbox.my.salesforce-sites.com/Prechat/resource/1698278087000/ChatHelpButton" /><div id="liveagent_button_offline_57332000000Cb3T" style="display: none;"><!-- Offline Chat Content --></div>
+<a id="liveagent_button_online_57332000000Cb3T" href="javascript://Chat" style="display: none;" onclick="liveagent.startChat('57332000000Cb3T')"></a>
+<div id="liveagent_button_offline_57332000000Cb3T" style="display: none;"><!-- Offline Chat Content --></div>
+
 <script type="text/javascript">
-if (!window._laq) { window._laq = []; }
-window._laq.push(function(){liveagent.showWhenOnline('57332000000Cb3T', document.getElementById('liveagent_button_online_57332000000Cb3T'));
-liveagent.showWhenOffline('57332000000Cb3T', document.getElementById('liveagent_button_offline_57332000000Cb3T'));
-});
+	if (!window._laq) { window._laq = []; }
+		window._laq.push(function(){liveagent.showWhenOnline('57332000000Cb3T', document.getElementById('liveagent_button_online_57332000000Cb3T'));
+		liveagent.showWhenOffline('57332000000Cb3T', document.getElementById('liveagent_button_offline_57332000000Cb3T'));
+	});
 </script>
 </body>
 	</html>
