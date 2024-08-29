@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML 5 Boilerplate</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+      embedded_svc.settings.widgetHeight = "1000px"
+
+			embeddedservice_bootstrap.init(
+				'00D6t0000008gGP',
+				'Messaging_Test',
+				'https://rlmain--staging.sandbox.my.site.com/ESWMessagingTest1715201575772',
+				{
+					scrt2URL: 'https://rlmain--staging.sandbox.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://rlmain--staging.sandbox.my.site.com/ESWMessagingTest1715201575772/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+
+  </body>
+</html>
